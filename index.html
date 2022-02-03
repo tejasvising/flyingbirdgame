@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="document.getElementById('sound1').play();">
+    <div id='parent'>
+    <audio id='sound1' src='shoot.mp3' preload='auto'></audio>
+    <audio id='sound2' src='win.wav' preload='auto'></audio>
+    <audio id='sound3' src='levelup.mp3' preload='auto'></audio>
+    <input type='checkbox' id='duck1'>
+    <label for='duck1' class='duck'></label>
+    <input type='checkbox' id='duck2'>
+    <label for='duck2' class='duck'></label>
+    <input type='checkbox' id='duck3'>
+    <label for='duck3' class='duck'></label>
+    <input type='checkbox' id='duck4'>
+    <label for='duck4' class='duck'></label>
+    <input type='checkbox' id='duck5'>
+    <label for='duck5' class='duck'></label>
+    <div class='score'>Score:<span id='score'>0</span></div>
+    <div class='level'>Level:<span id='level'>1</span></div>
+    <script src='index.js'></script>
+    </div>
+</body>
+</html>
